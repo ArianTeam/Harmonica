@@ -1,0 +1,273 @@
+@import url('../../Component/Harmony-Menu/Harmony-menu.css');
+
+@import url('../App/harmony_icon.css');
+
+@import 'tailwindcss';
+
+/* ---------------- Pinar Font ---------------- */
+/* Regular (وزن 400) */
+@font-face {
+  font-family: 'pinar';
+  src:
+    url('../../Fonts/pinar/Pinar-Regular.woff2') format('woff2'),
+    url('../../Fonts/pinar/Pinar-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Bold (وزن 700) */
+@font-face {
+  font-family: 'pinar';
+  src:
+    url('../../Fonts/pinar/Pinar-Bold.woff2') format('woff2'),
+    url('../../Fonts/pinar/Pinar-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ---------------- IranYekan Font ---------------- */
+@font-face {
+  font-family: iranyekan;
+  src: url('../../Fonts/iranyekan/IRANYekanXVF.woff') format('woff-variations');
+  font-weight: 100 1000;
+  font-display: swap;
+}
+
+/*Static Font*/
+
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: 300;
+  src: url('../../Fonts/iranyekan/IRANYekanXFaNum-Light.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: 900;
+  src: url('../../Fonts/iranyekan/IRANYekanXFaNum-Black.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: 950;
+  src: url('../../Fonts/iranyekan/IRANYekanXFaNum-ExtraBlack.woff2')
+    format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: bold;
+  src: url('../../Fonts/iranyekan/IRANYekanXFaNum-Bold.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: normal;
+  src: url('../../Fonts/iranyekan/IRANYekanXFaNum-Regular.woff2')
+    format('woff2');
+  font-display: swap;
+}
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: #dfe7ef;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  unicode-bidi: plaintext;
+}
+body {
+  font-family: 'iranyekan', 'pinar', sans-serif;
+  background-color: #f6f6f6;
+  color: #303030;
+  line-height: 1.625;
+  
+}
+
+.overflow-auto,
+.overflow-scroll,
+.overflow-x-auto,
+.overflow-x-scroll,
+.overflow-y-auto,
+.overflow-y-scroll {
+  scrollbar-color: #0000001a transparent;
+}
+.overflow-auto > *,
+.overflow-scroll > *,
+.overflow-x-auto > *,
+.overflow-y-auto > * {
+  scrollbar-color: auto;
+}
+
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --text: #0f172a;
+  --muted: #64748b;
+  --border: #e2e8f0;
+  --primary: #2563eb;
+  --primary-2: #eff6ff;
+  --sidebar: #ffffff;
+  --code: #0f172a;
+  --code-text: #e2e8f0;
+  --success: #16a34a;
+  --warning: #b45309;
+}
+
+@layer components {
+  .card {
+    @apply rounded-2xl bg-white relative  shadow-[0_3px_10px_0_#302e380f] border border-slate-200 p-3 sm:p-5 scroll-mt-21;
+  }
+
+  .card_alert {
+    @apply bg-red-100 border-x-5 border-red-500 border-y-transparent py-3 px-2 text-xs space-y-1;
+  }
+
+  .badge {
+    @apply inline-flex items-center justify-center w-fit text-xs rounded-full py-1 px-3 border font-semibold;
+  }
+
+  .badge_success {
+    @apply bg-green-100 border-green-300 text-green-700;
+  }
+
+  .badge_allert {
+    @apply bg-orange-100 border-orange-300 text-orange-700;
+  }
+
+  .badge_information{
+    @apply bg-blue-100 border-blue-200 text-blue-700
+  }
+
+  code {
+    @apply select-all text-nowrap rounded-lg text-red-700 py-1 px-1.5 bg-slate-200 cursor-pointer text-sm inline-block ;
+    direction: ltr;
+    
+  }
+  pre {
+    @apply bg-slate-900 text-slate-200 p-2 sm:p-4 overflow-x-auto max-w-full  text-sm whitespace-pre-wrap rounded-lg leading-6 sm:leading-8 max-h-96;
+    direction: ltr;
+
+  }
+
+  strong{
+    @apply font-bold text-slate-900 inline-block
+  }
+
+
+  .help_table_wrapper {
+    @apply overflow-x-auto min-w-full;
+  }
+
+  .help_table {
+    @apply table w-full  border-collapse  border-inherit min-w-140;
+  }
+
+  .help_table thead th {
+    @apply bg-slate-100 text-nowrap  py-3 px-2  uppercase font-semibold text-slate-900 text-sm text-start first:rounded-tr-lg last:rounded-tl-lg first:text-start ;
+  }
+
+
+  .help_table tbody tr {
+    @apply not-last:border-b not-last:border-slate-200   [&>td:nth-child(2)]:border-e [&>td:nth-child(2)]:border-slate-200 [&>td:last-child]:border-e-0!;
+  }
+
+  .help_table tbody td {
+    @apply py-3 px-2 text-start first:text-start text-sm leading-relaxed min-w-1 text-nowrap;
+  }
+
+  .help_table tbody tr:hover td {
+    @apply bg-slate-50 
+  }
+
+   .help_box_table {
+    @apply flex flex-col rounded-lg relative bg-white wrap-break-word  border border-slate-200;
+  }
+
+  .page-header{
+    @apply sticky top-16 inset-x-0  z-100 shadow-[1px_0px_5px_1px] shadow-gray-300
+  }
+
+
+
+  /* end-table */
+ 
+}
+
+.menu-items a:hover,
+.menu-items a.active {
+  background: rgba(255, 255, 255, 0.05);
+  border-right-color: #8ab4ff;
+  color: #fff;
+}
+
+/*animate*/
+.hmodal {
+  z-index: 1054;
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  transition: all 0.6s;
+}
+/*bg_dark_start*/
+.blurBackstage {
+  position: fixed;
+  inset: 0;
+  z-index: 1053;
+  width: 100%;
+  height: 100%;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  backdrop-filter: blur(10px);
+}
+.blurBackstage.show {
+  opacity: 1;
+  visibility: visible;
+}
+/*bg_dark_start*/
+
+/*right_menu_start*/
+
+.hmodal#searching {
+  top: -100%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+.hmodal#searching.showModal {
+  top: 2.5rem;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
