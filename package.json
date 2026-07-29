@@ -1,0 +1,18 @@
+{
+  "name": "help",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "help": "npx @tailwindcss/cli -i ./V1/htemplate/Help/Assets/Css/App/input.css -o ./htemplate/Help/Assets/Css/App/output.css  --watch",
+    "mini": "npx @tailwindcss/cli -i ./V1/htemplate/Help/Assets/Css/App/input.css -o ./htemplate/Help/Assets/Css/App/output.css  --minify"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.2",
+    "tailwindcss": "^4.3.2"
+  },
+  "devDependencies": {}
+}
