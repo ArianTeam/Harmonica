@@ -88,11 +88,11 @@ Tip: GitHub Markdown does not support custom fonts directly; we use badges, colo
 
 **هدف:** رندر یک بنر (تصویر + لینک + عنوان) با تگ‌های آماده
 ```html
-<!-- TODO: نمونه واقعی بنر هارمونیکا را اینجا قرار بده -->
-<!-- مثال (placeholder) -->
-<div class="banner">
-  <!-- <h:banner key="home_top" /> -->
-</div>
+(banner)
+  <a href="(link)" class="banner-link">
+    <img src="(image)" alt="(title)">
+  </a>
+(/banner)
 ```
 
 
