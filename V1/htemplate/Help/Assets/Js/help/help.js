@@ -163,18 +163,23 @@ function showToast(message) {
 
 // end-coppy
 
-document.addEventListener('scroll', function () {
-  const top = window.scrollY || document.documentElement.scrollTop;
 
-  const goToTop = document.querySelector('.go-to-top');
-  if (!goToTop) return;
+document.addEventListener('DOMContentLoaded', () => {
+  const menu = document.querySelector('.go-to-top');
+  if (!menu) return;
 
-  if (top >= 40) {
-    goToTop.classList.add('active');
-  } else {
-    goToTop.classList.remove('active');
-  }
+  let lastScrollTop = 0;
+
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+
+    menu.classList.toggle('active', scrollTop < lastScrollTop);
+
+    lastScrollTop = scrollTop;
+  });
 });
+
+
 
 // /*showModal*/
 

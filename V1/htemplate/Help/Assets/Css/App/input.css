@@ -170,7 +170,7 @@ body {
     
   }
   pre {
-    @apply bg-slate-900 text-slate-200 p-2 sm:p-4 overflow-x-auto max-w-full  text-sm whitespace-pre-wrap rounded-lg leading-6 sm:leading-8 max-h-96;
+    @apply bg-slate-900 text-slate-200 p-2 sm:p-4 overflow-x-auto max-w-full  text-sm whitespace-pre-wrap rounded-lg leading-6 sm:leading-8 max-h-96 text-nowrap;
     direction: ltr;
 
   }
@@ -189,7 +189,7 @@ body {
   }
 
   .help_table thead th {
-    @apply bg-slate-100 text-nowrap  py-3 px-2  uppercase font-semibold text-slate-900 text-sm text-start first:rounded-tr-lg last:rounded-tl-lg first:text-start ;
+    @apply bg-slate-100 text-nowrap  py-3 px-2  uppercase font-semibold text-slate-900 text-xs sm:text-sm text-start first:rounded-tr-lg last:rounded-tl-lg first:text-start ;
   }
 
 
@@ -198,7 +198,7 @@ body {
   }
 
   .help_table tbody td {
-    @apply py-3 px-2 text-start first:text-start text-sm leading-relaxed min-w-1 text-nowrap;
+    @apply py-3 px-2 text-start first:text-start text-xs sm:text-sm  min-w-1 text-nowrap;
   }
 
   .help_table tbody tr:hover td {
