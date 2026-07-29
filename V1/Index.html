@@ -1563,9 +1563,7 @@
 
           <div class="sm:px-3 space-y-5">
             <div>
-              <pre>
-(chart color="" fillColor="" id="" group="" option="")(/chart)</pre
-              >
+              <pre>(chart color="" fillColor="" id="" group="" option="")(/chart)</pre>
             </div>
             <p class="text-sm">
               <strong>توضیح کوتاه:</strong>
@@ -2171,6 +2169,214 @@
           </div>
         </section>
         <!-- end-banner-->
+
+           <!-- stat-datagroup -->
+        <section
+          id="datagroup"
+          data-search="زیرگروه فروشگاه،زیرگروه"
+          class="card space-y-5"
+        >
+          <div
+            class="flex page-header flex-wrap gap-3 items-center justify-between bg-slate-100 px-2 py-3 sm:px-5 sm:py-3"
+          >
+            <div class="flex items-center gap-2">
+              <span class="size-3 rounded-full bg-red-400"></span>
+              <span class="size-3 rounded-full bg-yellow-400"></span>
+              <span class="size-3 rounded-full bg-green-400"></span>
+
+              <span class="h-5 w-px bg-slate-300"></span>
+
+              <span class="badge badge_information"> دستور </span>
+            </div>
+
+            <h2
+              class="text-sm sm:text-lg font-semibold text-slate-900"
+              dir="auto"
+            >
+              (datagroup)(/datagroup)
+            </h2>
+          </div>
+
+          <div class="sm:px-3 space-y-5">
+            
+            <div>
+              <pre>(datagrooup grou="" type="blog،archive،shop")(/datagroup)</pre>
+            </div>
+                 <div class="rounded-xl border border-slate-200 bg-slate-50 p-4">
+              <div class="flex gap-3 items-center" dir="auto">
+                <span class="font-black shrink-0">type:</span>
+                <div class="flex flex-wrap gap-2" dir="auto">
+                  <span class="text-xs badge rounded-lg bg-sky-100 inline-flex">
+                    blog="<span class="text-sky-700">صفحه مطلب</span
+                    >"
+                  </span>
+                  ،
+                  <span class="text-xs badge rounded-lg bg-sky-100 inline-flex">
+                    archive="<span class="text-sky-700">صفحه آرشیو</span>"
+                  </span>
+                  ،
+                  <span class="text-xs badge rounded-lg bg-sky-100 inline-flex">
+                    shop="<span class="text-sky-700">صفحه فروشگاه</span>"
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="space-y-5 pt-5 border-t">
+              <div class="flex items-center gap-3">
+                <div
+                  class="flex size-10 shrink-0 items-center justify-center rounded-xl bg-sky-100 text-sky-700"
+                >
+                  <i class="harmony-icon-code harmony-icon"></i>
+                </div>
+
+                <div>
+                  <h2 class="text-xs sm:text-sm md:text-xl font-bold text-slate-900">فیلد ها</h2>
+                  <p class="text-xs sm:text-sm text-slate-500">
+                    این فیلد ها در داخل دستورات قابل استفاده هستند.
+                  </p>
+                </div>
+              </div>
+              <div class="help_box_table">
+                <div class="help_table_wrapper">
+                  <table class="help_table">
+                    <thead>
+                      <tr>
+                        <th>توضیح</th>
+                        <th>فیلد</th>
+                        <th>توضیح</th>
+                        <th>فیلد</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td>شناسه گروه</td>
+                        <td><code>(id)</code></td>
+                        <td>نام گروه</td>
+                        <td><code>(title)</code></td>
+                      </tr>
+                      <tr>
+                        <td>عنوان سئو گروه</td>
+                        <td><code>(seotitle)</code></td>
+                        <td>کلمات کلیدی</td>
+                        <td><code>(keyword)</code></td>
+                      </tr>
+                      <tr>
+                        <td>توضیحات</td>
+                        <td><code>(description)</code></td>
+                        <td>محتوای اصلی</td>
+                        <td><code>(editor)</code></td>
+                      </tr>
+                      <tr>
+                        <td>توضیحات</td>
+                        <td><code>(description)</code></td>
+                        <td>محتوای اصلی</td>
+                        <td><code>(editor)</code></td>
+                      </tr>
+                      <tr>
+                        <td>آدرس گروه</td>
+                        <td><code>(link)</code></td>
+                        <td>تصویر</td>
+                        <td><code>(image)</code></td>
+                      </tr>
+
+                       <tr>
+                        <td>بنر</td>
+                        <td><code>(banner)</code></td>
+                        <td>آیکون</td>
+                        <td><code>(icon)</code></td>
+                      </tr>
+                       <tr>
+                        <td>برچسب</td>
+                        <td><code>(tag)</code></td>
+                        <td>استایل نمایش برای گروه‌های باز/فعال </td>
+                        <td><code>(isopengroup)</code></td>
+                      </tr>
+                      <tr>
+                        <td>استایل نمایش برای گروه‌های بسته/غیرفعال</td>
+                        <td><code>(isclosegroup)</code></td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="space-y-5">
+              <div class="flex items-center gap-3">
+                <div
+                  class="flex size-10 shrink-0 items-center justify-center rounded-xl bg-sky-100 text-sky-700"
+                >
+                  <i class="harmony-icon-chrome harmony-icon"></i>
+                </div>
+
+                <div>
+                  <h2 class="text-xs sm:text-sm md:text-xl font-bold text-slate-900">خروجی کد</h2>
+                  <p class="text-xs sm:text-sm text-slate-500">
+                    مدل خروجی و نمایش در ساختار html
+                  </p>
+                </div>
+              </div>
+
+              <div class="overflow-hidden rounded-xl border border-slate-200">
+                <div
+                  class="flex items-center justify-between border-b border-slate-200 bg-slate-200 px-4 py-3"
+                >
+                  <div class="flex items-center gap-2">
+                    <span class="size-3 rounded-full bg-red-400"></span>
+                    <span class="size-3 rounded-full bg-yellow-400"></span>
+                    <span class="size-3 rounded-full bg-green-400"></span>
+
+                    <span class="h-5 w-px bg-slate-300"></span>
+
+                    <span class="text-sm font-medium text-slate-600"
+                      >HTML Output</span
+                    >
+                  </div>
+                  <div>
+                    <a
+                      href="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+                      data-video-lightbox
+                      data-title="فایل mp4 مستقیم"
+                      class="group inline-flex items-center gap-1.5 rounded-md bg-white px-2 py-1 text-xs font-medium text-slate-600 ring-1 ring-slate-300 hover:bg-slate-700 hover:text-white hover:ring-slate-700 active:scale-95"
+                    >
+                      <i class="harmony-icon-play harmony-icon text-xl"></i>
+                      ویدئو
+                    </a>
+                  </div>
+                </div>
+
+                <pre
+                  class="overflow-x-auto bg-slate-100 p-5 text-sm leading-7 text-slate-700"
+                >
+
+ (datagroup group="12" type="blog")
+    &lt;div style="background-image:url((banner))"&gt;
+      &lt;div&gt;
+        &lt;img src="(icon)" alt="(title) icon"&gt;
+        &lt;h1&gt;(title)&lt;/h1&gt;
+        &lt;p &gt;(description)&lt;/p&gt;
+        &lt;p&gt;عنوان سئو: (seotitle)&lt;/p&gt;
+        &lt;p&gt;کلمات کلیدی: (keyword)&lt;/p&gt;
+        &lt;p&gt;برچسب: (tag)&lt;/p&gt;
+        &lt;div &gt;
+            (editor)
+        &lt;/div&gt;
+        &lt;div  (isopengroup)&gt;
+            &lt;span&gt;ثبت سفارش در این گروه فعال است&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div (isclosegroup)&gt;
+            &lt;span&gt;این گروه موقتاً غیرفعال است&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+(/datagroup)</pre>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end-datagroup -->
 
         <!-- پایان عمومی -->
 
@@ -9525,141 +9731,9 @@
 
 
 
-        <!-- شروع بلاتکلیف -->
-        <!-- stat-datagroup -->
-        <section
-          id="datagroup"
-          data-search="زیرگروه فروشگاه،زیرگروه"
-          class="card space-y-5"
-        >
-          <div
-            class="flex page-header flex-wrap gap-3 items-center justify-between bg-slate-100 px-2 py-3 sm:px-5 sm:py-3"
-          >
-            <div class="flex items-center gap-2">
-              <span class="size-3 rounded-full bg-red-400"></span>
-              <span class="size-3 rounded-full bg-yellow-400"></span>
-              <span class="size-3 rounded-full bg-green-400"></span>
 
-              <span class="h-5 w-px bg-slate-300"></span>
+     
 
-              <span class="badge badge_information"> دستور </span>
-            </div>
-
-            <h2
-              class="text-sm sm:text-lg font-semibold text-slate-900"
-              dir="auto"
-            >
-              (datagroup)(/datagroup)
-            </h2>
-          </div>
-
-          <div class="sm:px-3 space-y-5">
-            <div>
-              <pre>(datagrooup grou="" type="blog،archiveTshop")(/datagroup)</pre>
-            </div>
-            <div class="space-y-5 pt-5 border-t">
-              <div class="flex items-center gap-3">
-                <div
-                  class="flex size-10 shrink-0 items-center justify-center rounded-xl bg-sky-100 text-sky-700"
-                >
-                  <i class="harmony-icon-code harmony-icon"></i>
-                </div>
-
-                <div>
-                  <h2 class="text-xs sm:text-sm md:text-xl font-bold text-slate-900">فیلد ها</h2>
-                  <p class="text-xs sm:text-sm text-slate-500">
-                    این فیلد ها در داخل دستورات قابل استفاده هستند.
-                  </p>
-                </div>
-              </div>
-              <div class="help_box_table">
-                <div class="help_table_wrapper">
-                  <table class="help_table">
-                    <thead>
-                      <tr>
-                        <th>توضیح</th>
-                        <th>فیلد</th>
-                        <th>توضیح</th>
-                        <th>فیلد</th>
-                      </tr>
-                    </thead>
-
-                    <tbody>
-                      <tr>
-                        <td>*****</td>
-                        <td><code>(****)</code></td>
-                        <td>*****</td>
-                        <td><code>(****)</code></td>
-                      </tr>
-                      <tr>
-                        <td>*****</td>
-                        <td><code>(****)</code></td>
-                        <td></td>
-                        <td><code>****</code></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-
-            <div class="space-y-5">
-              <div class="flex items-center gap-3">
-                <div
-                  class="flex size-10 shrink-0 items-center justify-center rounded-xl bg-sky-100 text-sky-700"
-                >
-                  <i class="harmony-icon-chrome harmony-icon"></i>
-                </div>
-
-                <div>
-                  <h2 class="text-xs sm:text-sm md:text-xl font-bold text-slate-900">خروجی کد</h2>
-                  <p class="text-xs sm:text-sm text-slate-500">
-                    مدل خروجی و نمایش در ساختار html
-                  </p>
-                </div>
-              </div>
-
-              <div class="overflow-hidden rounded-xl border border-slate-200">
-                <div
-                  class="flex items-center justify-between border-b border-slate-200 bg-slate-200 px-4 py-3"
-                >
-                  <div class="flex items-center gap-2">
-                    <span class="size-3 rounded-full bg-red-400"></span>
-                    <span class="size-3 rounded-full bg-yellow-400"></span>
-                    <span class="size-3 rounded-full bg-green-400"></span>
-
-                    <span class="h-5 w-px bg-slate-300"></span>
-
-                    <span class="text-sm font-medium text-slate-600"
-                      >HTML Output</span
-                    >
-                  </div>
-                  <div>
-                    <a
-                      href="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
-                      data-video-lightbox
-                      data-title="فایل mp4 مستقیم"
-                      class="group inline-flex items-center gap-1.5 rounded-md bg-white px-2 py-1 text-xs font-medium text-slate-600 ring-1 ring-slate-300 hover:bg-slate-700 hover:text-white hover:ring-slate-700 active:scale-95"
-                    >
-                      <i class="harmony-icon-play harmony-icon text-xl"></i>
-                      ویدئو
-                    </a>
-                  </div>
-                </div>
-
-                <pre
-                  class="overflow-x-auto bg-slate-100 p-5 text-sm leading-7 text-slate-700"
-                >
-(datagroup)
-
-(/data-group)</pre
-                >
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- end-datagroup -->
-        <!-- پایان بلاتکلیف -->
 
         <div class="text-center p-5 text-gray-600">
           <p>مستندات فنی Harmonica Transpiler V1 - بر اساس تحلیل سورس کد</p>
