@@ -103,6 +103,9 @@
                   <li>
                     <a href="#datagroup">datagroup</a>
                   </li>
+                  <li>
+                    <a href="#signin">ورود کاربران</a>
+                  </li>
                 </ul>
               </li>
               <li>
@@ -488,6 +491,11 @@
                           <code>(isimage1)</code> تا <code>(isimage4)</code>
                         </td>
                         <td>نمایش/عدم نمایش تصاویر</td>
+                        <td>
+                          <code>(hasloggedin)</code>
+                        </td>
+                        <td>نمایش/عدم نمایش ورود کاربران</td>
+
                       </tr>
                     </tbody>
                   </table>
@@ -722,56 +730,7 @@
               </div>
             </div>
 
-            <div class="space-y-5">
-              <div class="flex items-center gap-3">
-                <div
-                  class="flex size-10 shrink-0 items-center justify-center rounded-xl bg-sky-100 text-sky-700"
-                >
-                  <i class="harmony-icon-code harmony-icon"></i>
-                </div>
-                <div>
-                  <h2
-                    class="text-xs sm:text-sm md:text-xl font-bold text-slate-900"
-                  >
-                    کاربر
-                  </h2>
-                  <p class="text-xs sm:text-sm text-slate-500">
-                    برای نمایش اطلاعات کاربر، وضعیت ورود، مشخصات حساب کاربر جاری
-                    سایت استفاده می‌شود.
-                  </p>
-                </div>
-              </div>
-
-              <div class="help_box_table">
-                <div class="help_table_wrapper">
-                  <table class="help_table">
-                    <thead>
-                      <tr>
-                        <th>دستور</th>
-                        <th>توضیح</th>
-                        <th>دستور</th>
-                        <th>توضیح</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td><code>(hpname)</code></td>
-                        <td>نام مهمان</td>
-                        <td><code>(ulogin)</code></td>
-                        <td>لینک ورود</td>
-                      </tr>
-
-                      <tr>
-                        <td><code>(huserid)</code></td>
-                        <td>شناسه کاربر</td>
-                        <td><code>(userid)</code></td>
-                        <td>شناسه کاربر</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
+            
 
             <div class="space-y-5">
               <div class="flex items-center gap-3">
@@ -2462,6 +2421,151 @@
   &lt;/div&gt;
 (/datagroup)</pre
                 >
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end-datagroup -->
+         <!-- stat-signin -->
+        <section
+          id="signin"
+          data-search="ورود،ورودکاربر،ورودکاربران"
+          class="card space-y-5"
+        >
+          <div
+            class="flex page-header flex-wrap gap-3 items-center justify-between bg-slate-100 px-2 py-3 sm:px-5 sm:py-3"
+          >
+            <div class="flex items-center gap-2">
+              <span class="size-3 rounded-full bg-red-400"></span>
+              <span class="size-3 rounded-full bg-yellow-400"></span>
+              <span class="size-3 rounded-full bg-green-400"></span>
+
+              <span class="h-5 w-px bg-slate-300"></span>
+
+              <span class="badge badge_information"> دستور </span>
+            </div>
+
+            <h2
+              class="text-sm sm:text-lg font-semibold text-slate-900"
+              dir="auto"
+            >
+              (signin)
+            </h2>
+          </div>
+
+          <div class="sm:px-3 space-y-5">
+  
+            <div class="space-y-5">
+              <div class="flex items-center gap-3">
+                <div
+                  class="flex size-10 shrink-0 items-center justify-center rounded-xl bg-sky-100 text-sky-700"
+                >
+                  <i class="harmony-icon-code harmony-icon"></i>
+                </div>
+                <div>
+                  <h2
+                    class="text-xs sm:text-sm md:text-xl font-bold text-slate-900"
+                  >
+                    فیلد ها
+                  </h2>
+                  <p class="text-xs sm:text-sm text-slate-500">
+                    برای نمایش اطلاعات کاربر، وضعیت ورود، مشخصات حساب کاربر جاری
+                    سایت استفاده می‌شود.
+                  </p>
+                </div>
+              </div>
+
+              <div class="help_box_table">
+                <div class="help_table_wrapper">
+                  <table class="help_table">
+                    <thead>
+                      <tr>
+                        <th>دستور</th>
+                        <th>توضیح</th>
+                        <th>دستور</th>
+                        <th>توضیح</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><code>(hpname)</code></td>
+                        <td>نام مهمان</td>
+                        <td><code>(linkprofile) </code></td>
+                        <td>آدرس پروفایل</td>
+                      </tr>
+
+                      <tr>
+                        <td><code>(huserid)</code></td>
+                        <td>شناسه کاربر</td>
+                        <td><code>(userid)</code></td>
+                        <td>شناسه کاربر</td>
+                      </tr>
+                      <tr>
+                        <td><code>(hasloggedin)</code></td>
+                        <td>
+                          نمایش/عدم نمایش ورود کاربران
+                        </td>
+                      </tr>
+                     
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="space-y-5">
+              <div class="flex items-center gap-3">
+                <div
+                  class="flex size-10 shrink-0 items-center justify-center rounded-xl bg-sky-100 text-sky-700"
+                >
+                  <i class="harmony-icon-chrome harmony-icon"></i>
+                </div>
+
+                <div>
+                  <h2
+                    class="text-xs sm:text-sm md:text-xl font-bold text-slate-900"
+                  >
+                    خروجی کد
+                  </h2>
+                  <p class="text-xs sm:text-sm text-slate-500">
+                    مدل خروجی و نمایش در ساختار html
+                  </p>
+                </div>
+              </div>
+
+              <div class="overflow-hidden rounded-xl border border-slate-200">
+                <div
+                  class="flex items-center justify-between border-b border-slate-200 bg-slate-200 px-4 py-3"
+                >
+                  <div class="flex items-center gap-2">
+                    <span class="size-3 rounded-full bg-red-400"></span>
+                    <span class="size-3 rounded-full bg-yellow-400"></span>
+                    <span class="size-3 rounded-full bg-green-400"></span>
+
+                    <span class="h-5 w-px bg-slate-300"></span>
+
+                    <span class="text-sm font-medium text-slate-600"
+                      >HTML Output</span
+                    >
+                  </div>
+                  <div>
+                    <a
+                      href="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+                      data-video-lightbox
+                      data-title="فایل mp4 مستقیم"
+                      class="group inline-flex items-center gap-1.5 rounded-md bg-white px-2 py-1 text-xs font-medium text-slate-600 ring-1 ring-slate-300 hover:bg-slate-700 hover:text-white hover:ring-slate-700 active:scale-95"
+                    >
+                      <i class="harmony-icon-play harmony-icon text-xl"></i>
+                      ویدئو
+                    </a>
+                  </div>
+                </div>
+
+                <pre
+                  class="overflow-x-auto bg-slate-100 p-5 text-sm leading-7 text-slate-700"
+                >
+
+ </pre>
               </div>
             </div>
           </div>
