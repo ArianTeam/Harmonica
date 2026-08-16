@@ -2686,6 +2686,8 @@
                       <tr>
                         <td>توضیح گزینه</td>
                         <td><code>(reason)</code></td>
+                        <td>دکمه ثبت </td>
+                        <td><code>feedbackbtn</code></td>
                       </tr>
                     </tbody>
                   </table>
@@ -2743,18 +2745,14 @@
                 <pre
                   class="overflow-x-auto bg-slate-100 p-5 text-sm leading-7 text-slate-700"
                 >
-&lt;h2&gt;(titlefeedback1)&lt;/h2&gt;
-&lt;input type="hidden" value="(idfeedback1)"&gt;
-<code>(feedback)</code>
-    &lt;div class="poll-item" data-item-id="(id)"&gt;
-      &lt;div class="poll-item__emoji"&gt;(emoji)&lt;/div&gt;
-      &lt;div class="poll-item__content"&gt;
-        &lt;div class="poll-item__title"&gt;(title)&lt;/div&gt;
-        &lt;div class="poll-item__reason"&gt;(reason)&lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class="poll-item__count"&gt;(count)&lt;/div&gt;
+&lt;h2 data-hid="(idfeedback1)"&gt;(titlefeedback1)&lt;/h2&gt;
+  (feedback)
+    &lt;div class="(emoji)"&gt;&lt;/div&gt;
+      &lt;input type="radio" name="gender1" data-hid="(id)"&gt; 
+      &lt;span&gt;(title)&lt;/span&gt;
     &lt;/div&gt;
-<code>(/feedback)</code></pre>
+  (/feedback)
+&lt;button type="button" class="feedbackbtn" data-hid="0"&gt;ثبت نظر&lt;/button&gt;</pre>
               </div>
             </div>
             <div class="space-y-5">
