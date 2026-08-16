@@ -116,7 +116,7 @@
                   </li>
 
                   <li>
-                    <a href="#itempoll">نظرسنجی</a>
+                    <a href="#poll">نظرسنجی</a>
                   </li>
 
                   <li>
@@ -2840,7 +2840,7 @@
 
         <!-- start-pooll -->
         <section
-          id="itempoll"
+          id="poll"
           data-search="نظرسنجی،آیتم پول، پول،ایتم پول،pooll،pol،pool"
           class="card space-y-5"
         >
@@ -2861,13 +2861,13 @@
               class="text-sm sm:text-lg font-semibold text-slate-900"
               dir="auto"
             >
-              (itempoll)(/itempoll)
+              (poll)(/poll)
             </h2>
           </div>
 
           <div class="sm:px-3 space-y-5">
             <div>
-              <pre>(itempoll)(/itempoll)</pre>
+              <pre>(poll)(items)(/items)(/poll)</pre>
             </div>
             <p class="text-sm">
               <strong>توضیح کوتاه:</strong> نمایش آخرین نظرسنجی فعال و گزینه‌های
@@ -2912,19 +2912,13 @@
                     <tbody>
                       <tr>
                         <td>متن سوال</td>
-                        <td><code>(titlepoll)</code></td>
-                        <td>شناسه سوال</td>
-                        <td><code>(idpoll)</code></td>
+                        <td><code>(question)</code></td>
+                         <td>کد</td>
+                        <td><code>(id)</code></td>
                       </tr>
                       <tr>
-                        <td>کد</td>
-                        <td><code>(id)</code></td>
                         <td>عنوان</td>
                         <td><code>(title)</code></td>
-                      </tr>
-                      <tr>
-                        <td>تعداد</td>
-                        <td><code>(count)</code></td>
                         <td>دکمه ثبت</td>
                         <td><code>hpollbtn</code></td>
                       </tr>
@@ -2984,24 +2978,16 @@
                 <pre
                   class="overflow-x-auto bg-slate-100 p-5 text-sm leading-7 text-slate-700"
                 >
-
-  &lt;div&gt;
-    &lt;h2&gt;(titlepoll)&lt;/h2&gt;
-<code>(itempoll)</code>    
-    &lt;input type="hidden" value="(idpoll)"&gt;
+<code>(poll)</code>
+  &lt;h2&gt;(question)&lt;/h2&gt;
+  <code>(items)</code>
     &lt;label&gt;
         &lt;input type="radio" name="poll" value="(id)"&gt;
         &lt;span&gt;(title)&lt;/span&gt;
-        &lt;small&gt;
-            تعداد آراء:
-            (count)
-        &lt;/small&gt;
     &lt;/label&gt;
-<code>(/itempoll)</code>
- &lt;button type="button" class="hpollbtn" data-hid="(id)" &gt;
-        ثبت رأی
-    &lt;/button&gt;
-  &lt;/div&gt;</pre>
+  <code>(/items)</code>
+  &lt;button type="button" class="hpollbtn" data-hid="(id)" &gt;ثبت رأی&lt;/button&gt;
+<code>(/poll)</code></pre>
               </div>
             </div>
           </div>
