@@ -2612,7 +2612,7 @@
 
           <div class="sm:px-3 space-y-5">
             <div>
-              <pre>(feedback)(/feedback)</pre>
+              <pre>(feedback)(items)(/items)(/feedback)</pre>
             </div>
             <p class="text-sm">
               <strong>توضیح کوتاه:</strong>
@@ -2660,34 +2660,25 @@
 
                     <tbody>
                       <tr>
-                        <td>عنوان سوال اول</td>
-                        <td><code>(titlefeedback1)</code></td>
-                        <td>آیدی سوال اول</td>
-                        <td><code>(idfeedback1)</code></td>
-                      </tr>
-                      <tr>
-                        <td>عنوان سوال دوم</td>
-                        <td><code>(titlefeedback2)</code></td>
-                        <td>آیدی سوال دوم</td>
-                        <td><code>(idfeedback2)</code></td>
-                      </tr>
-                      <tr>
-                        <td>آیدی گزینه</td>
+                         <td>متن سوال</td>
+                        <td><code>(question)</code></td>
+                         <td>کد</td>
                         <td><code>(id)</code></td>
+                      </tr>
+
+                      <tr>
                         <td>متن گزینه</td>
                         <td><code>(title)</code></td>
                       </tr>
                       <tr>
-                        <td>تعداد رای</td>
-                        <td><code>(count)</code></td>
                         <td>ایموجی گزینه</td>
                         <td><code>(emoji)</code></td>
                       </tr>
                       <tr>
-                        <td>توضیح گزینه</td>
-                        <td><code>(reason)</code></td>
+                        <td>آیدی سوال بعدی</td>
+                        <td><code>(nextid)</code></td>
                         <td>دکمه ثبت </td>
-                        <td><code>feedbackbtn</code></td>
+                        <td><code>hfeedbackbtn</code></td>
                       </tr>
                     </tbody>
                   </table>
@@ -2745,14 +2736,16 @@
                 <pre
                   class="overflow-x-auto bg-slate-100 p-5 text-sm leading-7 text-slate-700"
                 >
-&lt;h2 data-hid="(idfeedback1)"&gt;(titlefeedback1)&lt;/h2&gt;
-  (feedback)
-    &lt;div class="(emoji)"&gt;&lt;/div&gt;
-      &lt;input type="radio" name="gender1" data-hid="(id)"&gt; 
+(feedback)
+
+  &lt;h2 &gt;(question)&lt;/h2&gt;
+    &lt;div &gt;&lt;/div&gt;
+      &lt;input type="radio" name="feedback" data-hid="(id)" next-id="(nextid)"&gt; 
+      &lt;span&gt;(emoji)&lt;/span&gt;
       &lt;span&gt;(title)&lt;/span&gt;
     &lt;/div&gt;
   (/feedback)
-&lt;button type="button" class="feedbackbtn" data-hid="0"&gt;ثبت نظر&lt;/button&gt;</pre>
+&lt;button type="button" class="hfeedbackbtn" data-hid="(id)"&gt;ثبت نظر&lt;/button&gt;</pre>
               </div>
             </div>
             <div class="space-y-5">
@@ -2922,6 +2915,10 @@
                         <td>دکمه ثبت</td>
                         <td><code>hpollbtn</code></td>
                       </tr>
+                       <tr>
+                        <td>ایموجی گزینه</td>
+                        <td><code>(emoji)</code></td>
+                      </tr>
                     </tbody>
                   </table>
                 </div>
@@ -2983,6 +2980,7 @@
   <code>(items)</code>
     &lt;label&gt;
         &lt;input type="radio" name="poll" value="(id)"&gt;
+        &lt;span&gt;(emoji)&lt;/span&gt;
         &lt;span&gt;(title)&lt;/span&gt;
     &lt;/label&gt;
   <code>(/items)</code>
