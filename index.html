@@ -1270,7 +1270,7 @@
           <div class="sm:px-3 space-y-5">
             <div>
               <pre>
-(links frome="" count="" group="#" order="desc،view،asc،rand")(/links)</pre
+(links frome="" count="" id="(linkid)" group="#" order="desc،view،asc،rand")(/links)</pre
               >
             </div>
             <div class="rounded-xl border border-slate-200 bg-slate-50 p-4">
@@ -1294,6 +1294,20 @@
                   </span>
                 </div>
               </div>
+              
+            </div>
+
+            <div class="rounded-xl border border-slate-200 bg-slate-50 p-4">
+              <div class="flex gap-3 items-center" >
+                <span class="font-black shrink-0" dir="auto">id="(linkid)"</span>
+                :
+                <div class="flex flex-wrap gap-2" dir="auto">
+                  <span class="text-xs">
+                    <span class="text-sky-700">این <code>ID</code> زمانی استفاده میشود که ما بخواهیم از <code>(links)</code> داخل دستورهای دیگه استفاده کنیم و فقط داخل  همان قسمت   مورد نظر نمایش داده شود.  </span>
+                  </span>
+                </div>
+              </div>
+              
             </div>
             
 
@@ -4961,13 +4975,17 @@
               class="text-sm sm:text-lg font-semibold text-slate-900"
               dir="auto"
             >
-              (page)(/page)
+              (page)
+                
+              (/page)
             </h2>
           </div>
 
           <div class="sm:px-3 space-y-5">
             <div>
-              <pre>(page  table="true" attach="true")(/page)</pre>
+              <pre>(page  table="true" attach="true")
+  (links id="(linksid)")(/links)
+(/page)</pre>
             </div>
             <p class="text-sm">
               <strong>توضیح کوتاه:</strong> نمایش یک صفحه محتوایی به‌همراه
