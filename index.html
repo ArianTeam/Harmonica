@@ -252,6 +252,7 @@
                   </li>
                 </ul>
               </li>
+              
             </ul>
           </div>
         </div>
@@ -1270,7 +1271,7 @@
           <div class="sm:px-3 space-y-5">
             <div>
               <pre>
-(links frome="" count="" id="(linkid)" group="#" order="desc،view،asc،rand")(/links)</pre
+(links frome="" count="" id="" group="(linkid)" order="desc،view،asc،rand")(/links)</pre
               >
             </div>
             <div class="rounded-xl border border-slate-200 bg-slate-50 p-4">
@@ -3035,7 +3036,7 @@
 
           <div class="sm:px-3 space-y-5">
             <div>
-              <pre>(ads count="" group="" order="")(/ads)</pre>
+              <pre>(ads count="" id="" group="(adsid)" order="")(/ads)</pre>
             </div>
             <div
               class="rounded-xl border border-slate-200 bg-slate-50 p-4 space-y-2"
@@ -3071,6 +3072,19 @@
                 </div>
               </div>
             </div>
+             <div class="rounded-xl border border-slate-200 bg-slate-50 p-4">
+              <div class="flex gap-3 items-center" >
+                <span class="font-black shrink-0" dir="auto">id="(adsid)"</span>
+                :
+                <div class="flex flex-wrap gap-2" dir="auto">
+                  <span class="text-xs">
+                    <span class="text-sky-700">این <code>ID</code> زمانی استفاده میشود که ما بخواهیم از <code>(ads)</code> داخل دستورهای دیگه استفاده کنیم و فقط داخل  همان قسمت   مورد نظر نمایش داده شود.  </span>
+                  </span>
+                </div>
+              </div>
+              
+            </div>
+            
 
             <div class="space-y-5 pt-5 border-t">
               <div class="flex items-center gap-3">
@@ -4984,8 +4998,13 @@
           <div class="sm:px-3 space-y-5">
             <div>
               <pre>(page  table="true" attach="true")
-  (links id="(linksid)")(/links)
+  (links group="(linkid)")(/links)
+  (ads group="(adsid)")(/ads)
+  (product group="(productid)")(/product)
+  (poll id="(pollid)")(items)(/items)(/poll)
+  (form id="(formid)" callback="")(/form)
 (/page)</pre>
+
             </div>
             <p class="text-sm">
               <strong>توضیح کوتاه:</strong> نمایش یک صفحه محتوایی به‌همراه
@@ -5250,6 +5269,372 @@
         &lt;/figure&gt;
     &lt;/div&gt;
 &lt;/article&gt;
+<code>(/page)</code></pre>
+              </div>
+            </div>
+             <div class="space-y-5">
+              <div class="flex items-center gap-3">
+                <div
+                  class="flex size-10 shrink-0 items-center justify-center rounded-xl bg-sky-100 text-sky-700"
+                >
+                  <i class="harmony-icon-chrome harmony-icon"></i>
+                </div>
+
+                <div>
+                  <h2
+                    class="text-xs sm:text-sm md:text-xl font-bold text-slate-900"
+                  >
+                     لینک‌ها
+                  </h2>
+                  <p class="text-xs sm:text-sm text-slate-500">
+                  لینک های مرتبط داخل درستور <code>(page)</code>  
+                  </p>
+                </div>
+              </div>
+
+              <div class="overflow-hidden rounded-xl border border-slate-200">
+                <div
+                  class="flex items-center justify-between border-b border-slate-200 bg-slate-200 px-4 py-3"
+                >
+                  <div class="flex items-center gap-2">
+                    <span class="size-3 rounded-full bg-red-400"></span>
+                    <span class="size-3 rounded-full bg-yellow-400"></span>
+                    <span class="size-3 rounded-full bg-green-400"></span>
+
+                    <span class="h-5 w-px bg-slate-300"></span>
+
+                    <span class="text-sm font-medium text-slate-600"
+                      >HTML Output</span
+                    >
+                  </div>
+                  <div>
+                    <a
+                      href="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+                      data-video-lightbox
+                      data-title="فایل mp4 مستقیم"
+                      class="group inline-flex items-center gap-1.5 rounded-md bg-white px-2 py-1 text-xs font-medium text-slate-600 ring-1 ring-slate-300 hover:bg-slate-700 hover:text-white hover:ring-slate-700 active:scale-95"
+                    >
+                      <i class="harmony-icon-play harmony-icon text-xl"></i>
+                      ویدئو
+                    </a>
+                  </div>
+                </div>
+    <pre class="overflow-x-auto bg-slate-100 p-5 text-sm leading-7 text-slate-700">
+<code>(page table="true" attach="true")</code>
+  <code>(links group="(linkid)" count="5")</code>
+    &lt;article&gt;
+      &lt;span&gt;کد: (id)&lt;/span&gt;
+      &lt;span&gt;گروه: (group)&lt;/span&gt;
+      &lt;h2&gt;
+        &lt;a href="(link)" target="(target)"&gt;(title)&lt;/a&gt;
+      &lt;/h2&gt;
+      &lt;p&gt;تعداد بازدید: (pageview)&lt;/p&gt;
+    &lt;/article&gt;
+  <code>(/links)</code>
+<code>(/page)</code></pre>
+              </div>
+            </div>
+             <div class="space-y-5">
+              <div class="flex items-center gap-3">
+                <div
+                  class="flex size-10 shrink-0 items-center justify-center rounded-xl bg-sky-100 text-sky-700"
+                >
+                  <i class="harmony-icon-chrome harmony-icon"></i>
+                </div>
+
+                <div>
+                  <h2
+                    class="text-xs sm:text-sm md:text-xl font-bold text-slate-900"
+                  >
+                     تبلیغات
+                  </h2>
+                  <p class="text-xs sm:text-sm text-slate-500">
+                   تبلیغات مرتبط داخل درستور <code>(page)</code>  
+                  </p>
+                </div>
+              </div>
+
+              <div class="overflow-hidden rounded-xl border border-slate-200">
+                <div
+                  class="flex items-center justify-between border-b border-slate-200 bg-slate-200 px-4 py-3"
+                >
+                  <div class="flex items-center gap-2">
+                    <span class="size-3 rounded-full bg-red-400"></span>
+                    <span class="size-3 rounded-full bg-yellow-400"></span>
+                    <span class="size-3 rounded-full bg-green-400"></span>
+
+                    <span class="h-5 w-px bg-slate-300"></span>
+
+                    <span class="text-sm font-medium text-slate-600"
+                      >HTML Output</span
+                    >
+                  </div>
+                  <div>
+                    <a
+                      href="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+                      data-video-lightbox
+                      data-title="فایل mp4 مستقیم"
+                      class="group inline-flex items-center gap-1.5 rounded-md bg-white px-2 py-1 text-xs font-medium text-slate-600 ring-1 ring-slate-300 hover:bg-slate-700 hover:text-white hover:ring-slate-700 active:scale-95"
+                    >
+                      <i class="harmony-icon-play harmony-icon text-xl"></i>
+                      ویدئو
+                    </a>
+                  </div>
+                </div>
+    <pre
+  class="overflow-x-auto bg-slate-100 p-5 text-sm leading-7 text-slate-700"
+>
+<code>(page table="true" attach="true")</code>
+  <code>(ads group="(adsid)")</code>
+    &lt;article&gt;
+      &lt;span&gt;کد تبلیغ: (id)&lt;/span&gt;
+      &lt;a href="(link)" target="(target)"&gt;
+        &lt;img src="(image)" alt="(title)" /&gt;
+      &lt;/a&gt;
+      &lt;div class="advertise-content"&gt;
+        &lt;h2&gt;
+          &lt;a href="(link)" target="(target)"&gt;(title)&lt;/a&gt;
+        &lt;/h2&gt;
+        &lt;p&gt;سایت: (site)&lt;/p&gt;
+        &lt;p&gt;کلمات کلیدی: (keyword)&lt;/p&gt;
+        &lt;p&gt;تعداد بازدید: (pageview)&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/article&gt;
+  <code>(/ads)</code>
+<code>(/page)</code></pre>
+              </div>
+            </div>
+            <div class="space-y-5">
+              <div class="flex items-center gap-3">
+                <div
+                  class="flex size-10 shrink-0 items-center justify-center rounded-xl bg-sky-100 text-sky-700"
+                >
+                  <i class="harmony-icon-chrome harmony-icon"></i>
+                </div>
+
+                <div>
+                  <h2
+                    class="text-xs sm:text-sm md:text-xl font-bold text-slate-900"
+                  >
+                     محصولات
+                  </h2>
+                  <p class="text-xs sm:text-sm text-slate-500">
+                   محصولات مرتبط داخل درستور <code>(page)</code>  
+                  </p>
+                </div>
+              </div>
+
+              <div class="overflow-hidden rounded-xl border border-slate-200">
+                <div
+                  class="flex items-center justify-between border-b border-slate-200 bg-slate-200 px-4 py-3"
+                >
+                  <div class="flex items-center gap-2">
+                    <span class="size-3 rounded-full bg-red-400"></span>
+                    <span class="size-3 rounded-full bg-yellow-400"></span>
+                    <span class="size-3 rounded-full bg-green-400"></span>
+
+                    <span class="h-5 w-px bg-slate-300"></span>
+
+                    <span class="text-sm font-medium text-slate-600"
+                      >HTML Output</span
+                    >
+                  </div>
+                  <div>
+                    <a
+                      href="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+                      data-video-lightbox
+                      data-title="فایل mp4 مستقیم"
+                      class="group inline-flex items-center gap-1.5 rounded-md bg-white px-2 py-1 text-xs font-medium text-slate-600 ring-1 ring-slate-300 hover:bg-slate-700 hover:text-white hover:ring-slate-700 active:scale-95"
+                    >
+                      <i class="harmony-icon-play harmony-icon text-xl"></i>
+                      ویدئو
+                    </a>
+                  </div>
+                </div>
+<pre
+  class="overflow-x-auto bg-slate-100 p-5 text-sm leading-7 text-slate-700"
+>
+<code>(page table="true" attach="true")</code>
+  <code>(product group="(productid)")</code>
+    &lt;article&gt;
+      &lt;span&gt;شناسه: (id)&lt;/span&gt;
+      &lt;span&gt;رتبه: (number)&lt;/span&gt;
+      &lt;span&gt;گروه: (group)&lt;/span&gt;
+      &lt;span&gt;کامتن: (ccomment)&lt;/span&gt;
+      &lt;span&gt;کد محصول: (code)&lt;/span&gt;
+      &lt;a href="(link)"&gt;
+        &lt;img src="(simage)" alt="(title)"&gt;
+      &lt;/a&gt;
+      &lt;div&gt;
+        &lt;img src="(image1)" (isimage1) alt=""&gt;
+        &lt;img src="(image2)" (isimage2) alt=""&gt;
+        &lt;img src="(image3)" (isimage3) alt=""&gt;
+        &lt;img src="(image4)" (isimage4) alt=""&gt;
+      &lt;/div&gt;
+      &lt;img src="(limage)" alt="(title)"&gt;
+      &lt;h2&gt;
+        &lt;a href="(link)"&gt;(title)&lt;/a&gt;
+      &lt;/h2&gt;
+      &lt;p&gt;(description)&lt;/p&gt;
+      &lt;div&gt;
+        (editor)
+      &lt;/div&gt;
+      &lt;div&gt;
+        &lt;del&gt;(firstprice)&lt; (hasdiscount) /del&gt;
+        &lt;strong&gt;(price)&lt;/strong&gt;
+        &lt;span&gt;(discount)% تخفیف&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        &lt;p&gt;کلمات کلیدی: (keyword)&lt;/p&gt;
+        &lt;p&gt;برچسب‌ها: (tag)&lt;/p&gt;
+        &lt;p&gt;بازدید: (pageview)&lt;/p&gt;
+        &lt;p&gt;تعداد در سبد خرید: (numberbasket)&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        &lt;p&gt;تاریخ: (date)&lt;/p&gt;
+        &lt;p&gt;تاریخ فارسی: (pdate)&lt;/p&gt;
+        &lt;p&gt;تاریخ فارسی قالب‌بندی‌شده: (fadate)&lt;/p&gt;
+        &lt;p&gt;تاریخ میلادی: (endate)&lt;/p&gt;
+        &lt;p&gt;تاریخ انقضا: (exDate)&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        (shopping)
+        (end)
+        &lt;a href="(link)"&gt;(btntext)&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;p&gt;آدرس کامل محصول: (address)&lt;/p&gt;
+    &lt;/article&gt;
+  <code>(/product)</code>
+<code>(/page)</code></pre>
+              </div>
+            </div>
+            <div class="space-y-5">
+              <div class="flex items-center gap-3">
+                <div
+                  class="flex size-10 shrink-0 items-center justify-center rounded-xl bg-sky-100 text-sky-700"
+                >
+                  <i class="harmony-icon-chrome harmony-icon"></i>
+                </div>
+
+                <div>
+                  <h2
+                    class="text-xs sm:text-sm md:text-xl font-bold text-slate-900"
+                  >
+                     نظرسنجی
+                  </h2>
+                  <p class="text-xs sm:text-sm text-slate-500">
+                   نظرسنجی مرتبط داخل درستور <code>(page)</code>  
+                  </p>
+                </div>
+              </div>
+
+              <div class="overflow-hidden rounded-xl border border-slate-200">
+                <div
+                  class="flex items-center justify-between border-b border-slate-200 bg-slate-200 px-4 py-3"
+                >
+                  <div class="flex items-center gap-2">
+                    <span class="size-3 rounded-full bg-red-400"></span>
+                    <span class="size-3 rounded-full bg-yellow-400"></span>
+                    <span class="size-3 rounded-full bg-green-400"></span>
+
+                    <span class="h-5 w-px bg-slate-300"></span>
+
+                    <span class="text-sm font-medium text-slate-600"
+                      >HTML Output</span
+                    >
+                  </div>
+                  <div>
+                    <a
+                      href="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+                      data-video-lightbox
+                      data-title="فایل mp4 مستقیم"
+                      class="group inline-flex items-center gap-1.5 rounded-md bg-white px-2 py-1 text-xs font-medium text-slate-600 ring-1 ring-slate-300 hover:bg-slate-700 hover:text-white hover:ring-slate-700 active:scale-95"
+                    >
+                      <i class="harmony-icon-play harmony-icon text-xl"></i>
+                      ویدئو
+                    </a>
+                  </div>
+                </div>
+<pre
+  class="overflow-x-auto bg-slate-100 p-5 text-sm leading-7 text-slate-700"
+>
+<code>(page table="true" attach="true")</code>
+  <code>(poll id="(pollid)")</code>
+    &lt;h2&gt;(question)&lt;/h2&gt;
+    (items)
+      &lt;label&gt;
+        &lt;input type="radio" name="poll" value="(id)" /&gt;
+        &lt;span&gt;(emoji)&lt;/span&gt;
+        &lt;span&gt;(title)&lt;/span&gt;
+      &lt;/label&gt;
+    (/items)
+    &lt;button type="button" class="hpollbtn" data-hid="(id)"&gt;ثبت رأی&lt;/button&gt;
+  <code>(/poll)</code>
+<code>(/page)</code></pre>
+              </div>
+            </div>
+            <div class="space-y-5">
+              <div class="flex items-center gap-3">
+                <div
+                  class="flex size-10 shrink-0 items-center justify-center rounded-xl bg-sky-100 text-sky-700"
+                >
+                  <i class="harmony-icon-chrome harmony-icon"></i>
+                </div>
+
+                <div>
+                  <h2
+                    class="text-xs sm:text-sm md:text-xl font-bold text-slate-900"
+                  >
+                     فرم
+                  </h2>
+                  <p class="text-xs sm:text-sm text-slate-500">
+                   فرم مرتبط داخل درستور <code>(page)</code>  
+                  </p>
+                </div>
+              </div>
+
+              <div class="overflow-hidden rounded-xl border border-slate-200">
+                <div
+                  class="flex items-center justify-between border-b border-slate-200 bg-slate-200 px-4 py-3"
+                >
+                  <div class="flex items-center gap-2">
+                    <span class="size-3 rounded-full bg-red-400"></span>
+                    <span class="size-3 rounded-full bg-yellow-400"></span>
+                    <span class="size-3 rounded-full bg-green-400"></span>
+
+                    <span class="h-5 w-px bg-slate-300"></span>
+
+                    <span class="text-sm font-medium text-slate-600"
+                      >HTML Output</span
+                    >
+                  </div>
+                  <div>
+                    <a
+                      href="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+                      data-video-lightbox
+                      data-title="فایل mp4 مستقیم"
+                      class="group inline-flex items-center gap-1.5 rounded-md bg-white px-2 py-1 text-xs font-medium text-slate-600 ring-1 ring-slate-300 hover:bg-slate-700 hover:text-white hover:ring-slate-700 active:scale-95"
+                    >
+                      <i class="harmony-icon-play harmony-icon text-xl"></i>
+                      ویدئو
+                    </a>
+                  </div>
+                </div>
+<pre
+  class="overflow-x-auto bg-slate-100 p-5 text-sm leading-7 text-slate-700"
+>
+<code>(page table="true" attach="true")</code>
+  <code>(form id="(formid)")</code>
+    &lt;div&gt;
+      &lt;div&gt;
+        (html)
+      &lt;/div&gt;
+      &lt;div data-success-callback="(callback)"&gt;
+        (massage)
+      &lt;/div&gt;
+      &lt;input type="hidden" value="(id)" /&gt;
+    &lt;/div&gt;
+  <code>(/form)</code>
 <code>(/page)</code></pre>
               </div>
             </div>
@@ -7459,8 +7844,6 @@
                 <pre
                   class="overflow-x-auto bg-slate-100 p-5 text-sm leading-7 text-slate-700"
                 >
-&lt;section class="contact-section"&gt;
-  &lt;h2&gt;فرم تماس&lt;/h2&gt;
 <code>(form id="5" callback="contactSuccess")</code>
   &lt;div&gt;
     &lt;div&gt;
@@ -7472,7 +7855,7 @@
     &lt;input type="hidden" value="(id)" /&gt;
   &lt;/div&gt;
 <code>(/form)</code>
-&lt;/section&gt;</pre>
+</pre>
               </div>
 
               <div class="card_alert">
