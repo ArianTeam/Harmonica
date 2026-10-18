@@ -252,7 +252,6 @@
                   </li>
                 </ul>
               </li>
-              
             </ul>
           </div>
         </div>
@@ -496,7 +495,6 @@
                           <code>(isloggedin)</code>
                         </td>
                         <td>نمایش/عدم نمایش ورود کاربران</td>
-
                       </tr>
                     </tbody>
                   </table>
@@ -570,6 +568,70 @@
                           <code>defaultgroup</code>
                         </td>
                         <td>گروه پیش‌فرض برای فیلتر</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="space-y-5">
+              <div class="flex items-center gap-3">
+                <div
+                  class="flex size-10 shrink-0 items-center justify-center rounded-xl bg-sky-100 text-sky-700"
+                >
+                  <i class="harmony-icon-code harmony-icon"></i>
+                </div>
+                <div>
+                  <h2
+                    class="text-xs sm:text-sm md:text-xl font-bold text-slate-900"
+                  >
+                    پارامترهای دریافت اطلاعات
+                  </h2>
+                  <p class="text-xs sm:text-sm text-slate-500">
+                    روش‌های دریافت مقادیر از آدرس صفحه و فرم‌ها.
+                  </p>
+                </div>
+              </div>
+
+              <div class="help_box_table">
+                <div class="help_table_wrapper">
+                  <table class="help_table">
+                    <thead>
+                      <tr>
+                        <th>پارامتر</th>
+                        <th>توضیح</th>
+                        <th>مثال</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><code>query_پارامتر</code></td>
+                        <td>
+                          برای دریافت مقدار یک پارامتر از آدرس صفحه (URL)، در
+                          صورت پشتیبانی سیستم.
+                        </td>
+                        <td>
+                          <span>خروجی URL:</span>
+                          <code>?page=2</code>
+                          _______
+                          <span>دریافت مقدار:</span>
+                          <code>query_page</code>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td><code>form_پارامتر</code></td>
+                        <td>
+                          برای دریافت مقدار یک فیلد ارسال‌شده از فرم، در صورت
+                          پشتیبانی سیستم.
+                        </td>
+                        <td>
+                          <span>ورودی فرم:</span>
+                          <code>name="search"</code>
+                          _______
+                          <span>دریافت مقدار:</span>
+                          <code>form_search</code>
+                        </td>
                       </tr>
                     </tbody>
                   </table>
@@ -731,8 +793,6 @@
               </div>
             </div>
 
-            
-
             <div class="space-y-5">
               <div class="flex items-center gap-3">
                 <div
@@ -780,7 +840,6 @@
                       <tr>
                         <td><code>(bloghome)</code></td>
                         <td>آدرس مطالب</td>
-                        
                       </tr>
                     </tbody>
                   </table>
@@ -1295,22 +1354,25 @@
                   </span>
                 </div>
               </div>
-              
             </div>
 
             <div class="rounded-xl border border-slate-200 bg-slate-50 p-4">
-              <div class="flex gap-3 items-center" >
-                <span class="font-black shrink-0" dir="auto">id="(linkid)"</span>
+              <div class="flex gap-3 items-center">
+                <span class="font-black shrink-0" dir="auto"
+                  >id="(linkid)"</span
+                >
                 :
                 <div class="flex flex-wrap gap-2" dir="auto">
                   <span class="text-xs">
-                    <span class="text-sky-700">این <code>ID</code> زمانی استفاده میشود که ما بخواهیم از <code>(links)</code> داخل دستورهای دیگه استفاده کنیم و فقط داخل  همان قسمت   مورد نظر نمایش داده شود.  </span>
+                    <span class="text-sky-700"
+                      >این <code>ID</code> زمانی استفاده میشود که ما بخواهیم از
+                      <code>(links)</code> داخل دستورهای دیگه استفاده کنیم و فقط
+                      داخل همان قسمت مورد نظر نمایش داده شود.
+                    </span>
                   </span>
                 </div>
               </div>
-              
             </div>
-            
 
             <div class="space-y-5 pt-5 border-t">
               <div class="flex items-center gap-3">
@@ -2449,7 +2511,7 @@
           </div>
         </section>
         <!-- end-datagroup -->
-         <!-- stat-signin -->
+        <!-- stat-signin -->
         <section
           id="signin"
           data-search="ورود،ورودکاربر،ورودکاربران"
@@ -2477,7 +2539,6 @@
           </div>
 
           <div class="sm:px-3 space-y-5">
-  
             <div class="space-y-5">
               <div class="flex items-center gap-3">
                 <div
@@ -2525,11 +2586,8 @@
                       </tr>
                       <tr>
                         <td><code>(isloggedin)</code></td>
-                        <td>
-                          نمایش/عدم نمایش ورود کاربران
-                        </td>
+                        <td>نمایش/عدم نمایش ورود کاربران</td>
                       </tr>
-                     
                     </tbody>
                   </table>
                 </div>
@@ -2586,9 +2644,7 @@
 
                 <pre
                   class="overflow-x-auto bg-slate-100 p-5 text-sm leading-7 text-slate-700"
-                >
-
- </pre>
+                ></pre>
               </div>
             </div>
           </div>
@@ -2676,9 +2732,9 @@
 
                     <tbody>
                       <tr>
-                         <td>متن سوال</td>
+                        <td>متن سوال</td>
                         <td><code>(question)</code></td>
-                         <td>کد</td>
+                        <td>کد</td>
                         <td><code>(id)</code></td>
                       </tr>
 
@@ -2693,7 +2749,7 @@
                       <tr>
                         <td>آیدی سوال بعدی</td>
                         <td><code>(nextid)</code></td>
-                        <td>دکمه ثبت </td>
+                        <td>دکمه ثبت</td>
                         <td><code>hfeedbackbtn</code></td>
                       </tr>
                     </tbody>
@@ -2760,7 +2816,8 @@
       &lt;span&gt;(title)&lt;/span&gt;
     &lt;/div&gt;
   (/feedback)
-&lt;button type="button" class="hfeedbackbtn" data-hid="(id)"&gt;ثبت نظر&lt;/button&gt;</pre>
+&lt;button type="button" class="hfeedbackbtn" data-hid="(id)"&gt;ثبت نظر&lt;/button&gt;</pre
+                >
               </div>
             </div>
             <div class="space-y-5">
@@ -2921,7 +2978,7 @@
                       <tr>
                         <td>متن سوال</td>
                         <td><code>(question)</code></td>
-                         <td>کد</td>
+                        <td>کد</td>
                         <td><code>(id)</code></td>
                       </tr>
                       <tr>
@@ -2930,7 +2987,7 @@
                         <td>دکمه ثبت</td>
                         <td><code>hpollbtn</code></td>
                       </tr>
-                       <tr>
+                      <tr>
                         <td>ایموجی گزینه</td>
                         <td><code>(emoji)</code></td>
                       </tr>
@@ -3047,7 +3104,6 @@
                   <span class="text-xs badge rounded-lg bg-sky-100 inline-flex">
                     "<span class="text-sky-700">شماره جایگاه</span>"
                   </span>
-                  
                 </div>
               </div>
               <div class="border-t border-dashed border-slate-300"></div>
@@ -3072,19 +3128,21 @@
                 </div>
               </div>
             </div>
-             <div class="rounded-xl border border-slate-200 bg-slate-50 p-4">
-              <div class="flex gap-3 items-center" >
+            <div class="rounded-xl border border-slate-200 bg-slate-50 p-4">
+              <div class="flex gap-3 items-center">
                 <span class="font-black shrink-0" dir="auto">id="(adsid)"</span>
                 :
                 <div class="flex flex-wrap gap-2" dir="auto">
                   <span class="text-xs">
-                    <span class="text-sky-700">این <code>ID</code> زمانی استفاده میشود که ما بخواهیم از <code>(ads)</code> داخل دستورهای دیگه استفاده کنیم و فقط داخل  همان قسمت   مورد نظر نمایش داده شود.  </span>
+                    <span class="text-sky-700"
+                      >این <code>ID</code> زمانی استفاده میشود که ما بخواهیم از
+                      <code>(ads)</code> داخل دستورهای دیگه استفاده کنیم و فقط
+                      داخل همان قسمت مورد نظر نمایش داده شود.
+                    </span>
                   </span>
                 </div>
               </div>
-              
             </div>
-            
 
             <div class="space-y-5 pt-5 border-t">
               <div class="flex items-center gap-3">
@@ -4445,10 +4503,10 @@
                   <h2
                     class="text-xs sm:text-sm md:text-xl font-bold text-slate-900"
                   >
-                     لینک‌ها
+                    لینک‌ها
                   </h2>
                   <p class="text-xs sm:text-sm text-slate-500">
-                  لینک های مرتبط داخل درستور <code>(product)</code>  
+                    لینک های مرتبط داخل درستور <code>(product)</code>
                   </p>
                 </div>
               </div>
@@ -4480,7 +4538,9 @@
                     </a>
                   </div>
                 </div>
-    <pre class="overflow-x-auto bg-slate-100 p-5 text-sm leading-7 text-slate-700">
+                <pre
+                  class="overflow-x-auto bg-slate-100 p-5 text-sm leading-7 text-slate-700"
+                >
 <code>(product)</code>
   <code>(links group="(linkid)" count="5")</code>
     &lt;article&gt;
@@ -4495,7 +4555,7 @@
 <code>(/product)</code></pre>
               </div>
             </div>
-             <div class="space-y-5">
+            <div class="space-y-5">
               <div class="flex items-center gap-3">
                 <div
                   class="flex size-10 shrink-0 items-center justify-center rounded-xl bg-sky-100 text-sky-700"
@@ -4507,10 +4567,10 @@
                   <h2
                     class="text-xs sm:text-sm md:text-xl font-bold text-slate-900"
                   >
-                     تبلیغات
+                    تبلیغات
                   </h2>
                   <p class="text-xs sm:text-sm text-slate-500">
-                   تبلیغات مرتبط داخل درستور <code>(product)</code>  
+                    تبلیغات مرتبط داخل درستور <code>(product)</code>
                   </p>
                 </div>
               </div>
@@ -4542,9 +4602,9 @@
                     </a>
                   </div>
                 </div>
-    <pre
-  class="overflow-x-auto bg-slate-100 p-5 text-sm leading-7 text-slate-700"
->
+                <pre
+                  class="overflow-x-auto bg-slate-100 p-5 text-sm leading-7 text-slate-700"
+                >
 <code>(product)</code>
   <code>(ads group="(adsid)")</code>
     &lt;article&gt;
@@ -4577,10 +4637,10 @@
                   <h2
                     class="text-xs sm:text-sm md:text-xl font-bold text-slate-900"
                   >
-                     مطالب
+                    مطالب
                   </h2>
                   <p class="text-xs sm:text-sm text-slate-500">
-                   مطالب مرتبط داخل درستور <code>(content)</code>  
+                    مطالب مرتبط داخل درستور <code>(content)</code>
                   </p>
                 </div>
               </div>
@@ -4612,9 +4672,9 @@
                     </a>
                   </div>
                 </div>
-<pre
-  class="overflow-x-auto bg-slate-100 p-5 text-sm leading-7 text-slate-700"
->
+                <pre
+                  class="overflow-x-auto bg-slate-100 p-5 text-sm leading-7 text-slate-700"
+                >
 <code>(page table="true" attach="true")</code>
   <code>(content group="(contentid)")</code>
     &lt;article&gt;
@@ -4662,10 +4722,10 @@
                   <h2
                     class="text-xs sm:text-sm md:text-xl font-bold text-slate-900"
                   >
-                     نظرسنجی
+                    نظرسنجی
                   </h2>
                   <p class="text-xs sm:text-sm text-slate-500">
-                   نظرسنجی مرتبط داخل درستور <code>(product)</code>  
+                    نظرسنجی مرتبط داخل درستور <code>(product)</code>
                   </p>
                 </div>
               </div>
@@ -4697,9 +4757,9 @@
                     </a>
                   </div>
                 </div>
-<pre
-  class="overflow-x-auto bg-slate-100 p-5 text-sm leading-7 text-slate-700"
->
+                <pre
+                  class="overflow-x-auto bg-slate-100 p-5 text-sm leading-7 text-slate-700"
+                >
 <code>(product)</code>
   <code>(poll id="(pollid)")</code>
     &lt;h2&gt;(question)&lt;/h2&gt;
@@ -4727,10 +4787,10 @@
                   <h2
                     class="text-xs sm:text-sm md:text-xl font-bold text-slate-900"
                   >
-                     فرم
+                    فرم
                   </h2>
                   <p class="text-xs sm:text-sm text-slate-500">
-                   فرم مرتبط داخل درستور <code>(product)</code>  
+                    فرم مرتبط داخل درستور <code>(product)</code>
                   </p>
                 </div>
               </div>
@@ -4762,9 +4822,9 @@
                     </a>
                   </div>
                 </div>
-<pre
-  class="overflow-x-auto bg-slate-100 p-5 text-sm leading-7 text-slate-700"
->
+                <pre
+                  class="overflow-x-auto bg-slate-100 p-5 text-sm leading-7 text-slate-700"
+                >
 <code>(product)</code>
   <code>(form id="(formid)")</code>
     &lt;div&gt;
@@ -5336,22 +5396,21 @@
               class="text-sm sm:text-lg font-semibold text-slate-900"
               dir="auto"
             >
-              (page)
-                
-              (/page)
+              (page) (/page)
             </h2>
           </div>
 
           <div class="sm:px-3 space-y-5">
             <div>
-              <pre>(page  table="true" attach="true")
+              <pre>
+(page  table="true" attach="true")
   (links group="(linkid)")(/links)
   (ads group="(adsid)")(/ads)
   (product group="(productid)")(/product)
   (poll id="(pollid)")(items)(/items)(/poll)
   (form id="(formid)" callback="")(/form)
-(/page)</pre>
-
+(/page)</pre
+              >
             </div>
             <p class="text-sm">
               <strong>توضیح کوتاه:</strong> نمایش یک صفحه محتوایی به‌همراه
@@ -5489,16 +5548,13 @@
                           <code>(isimagegallery1)</code> تا
                           <code>(isimagegallery6)</code>
                         </td>
-                        
                       </tr>
-                       <tr>
-                        
+                      <tr>
                         <td>داده اضافی</td>
                         <td>
                           <code>(tag1)</code> ,
                           <code>(tag2)</code>
                         </td>
-                        
                       </tr>
                     </tbody>
                   </table>
@@ -5619,7 +5675,7 @@
 <code>(/page)</code></pre>
               </div>
             </div>
-             <div class="space-y-5">
+            <div class="space-y-5">
               <div class="flex items-center gap-3">
                 <div
                   class="flex size-10 shrink-0 items-center justify-center rounded-xl bg-sky-100 text-sky-700"
@@ -5631,10 +5687,10 @@
                   <h2
                     class="text-xs sm:text-sm md:text-xl font-bold text-slate-900"
                   >
-                     لینک‌ها
+                    لینک‌ها
                   </h2>
                   <p class="text-xs sm:text-sm text-slate-500">
-                  لینک های مرتبط داخل درستور <code>(page)</code>  
+                    لینک های مرتبط داخل درستور <code>(page)</code>
                   </p>
                 </div>
               </div>
@@ -5666,7 +5722,9 @@
                     </a>
                   </div>
                 </div>
-    <pre class="overflow-x-auto bg-slate-100 p-5 text-sm leading-7 text-slate-700">
+                <pre
+                  class="overflow-x-auto bg-slate-100 p-5 text-sm leading-7 text-slate-700"
+                >
 <code>(page table="true" attach="true")</code>
   <code>(links group="(linkid)" count="5")</code>
     &lt;article&gt;
@@ -5681,7 +5739,7 @@
 <code>(/page)</code></pre>
               </div>
             </div>
-             <div class="space-y-5">
+            <div class="space-y-5">
               <div class="flex items-center gap-3">
                 <div
                   class="flex size-10 shrink-0 items-center justify-center rounded-xl bg-sky-100 text-sky-700"
@@ -5693,10 +5751,10 @@
                   <h2
                     class="text-xs sm:text-sm md:text-xl font-bold text-slate-900"
                   >
-                     تبلیغات
+                    تبلیغات
                   </h2>
                   <p class="text-xs sm:text-sm text-slate-500">
-                   تبلیغات مرتبط داخل درستور <code>(page)</code>  
+                    تبلیغات مرتبط داخل درستور <code>(page)</code>
                   </p>
                 </div>
               </div>
@@ -5728,9 +5786,9 @@
                     </a>
                   </div>
                 </div>
-    <pre
-  class="overflow-x-auto bg-slate-100 p-5 text-sm leading-7 text-slate-700"
->
+                <pre
+                  class="overflow-x-auto bg-slate-100 p-5 text-sm leading-7 text-slate-700"
+                >
 <code>(page table="true" attach="true")</code>
   <code>(ads group="(adsid)")</code>
     &lt;article&gt;
@@ -5763,10 +5821,10 @@
                   <h2
                     class="text-xs sm:text-sm md:text-xl font-bold text-slate-900"
                   >
-                     محصولات
+                    محصولات
                   </h2>
                   <p class="text-xs sm:text-sm text-slate-500">
-                   محصولات مرتبط داخل درستور <code>(page)</code>  
+                    محصولات مرتبط داخل درستور <code>(page)</code>
                   </p>
                 </div>
               </div>
@@ -5798,9 +5856,9 @@
                     </a>
                   </div>
                 </div>
-<pre
-  class="overflow-x-auto bg-slate-100 p-5 text-sm leading-7 text-slate-700"
->
+                <pre
+                  class="overflow-x-auto bg-slate-100 p-5 text-sm leading-7 text-slate-700"
+                >
 <code>(page table="true" attach="true")</code>
   <code>(product group="(productid)")</code>
     &lt;article&gt;
@@ -5867,10 +5925,10 @@
                   <h2
                     class="text-xs sm:text-sm md:text-xl font-bold text-slate-900"
                   >
-                     نظرسنجی
+                    نظرسنجی
                   </h2>
                   <p class="text-xs sm:text-sm text-slate-500">
-                   نظرسنجی مرتبط داخل درستور <code>(page)</code>  
+                    نظرسنجی مرتبط داخل درستور <code>(page)</code>
                   </p>
                 </div>
               </div>
@@ -5902,9 +5960,9 @@
                     </a>
                   </div>
                 </div>
-<pre
-  class="overflow-x-auto bg-slate-100 p-5 text-sm leading-7 text-slate-700"
->
+                <pre
+                  class="overflow-x-auto bg-slate-100 p-5 text-sm leading-7 text-slate-700"
+                >
 <code>(page table="true" attach="true")</code>
   <code>(poll id="(pollid)")</code>
     &lt;h2&gt;(question)&lt;/h2&gt;
@@ -5932,10 +5990,10 @@
                   <h2
                     class="text-xs sm:text-sm md:text-xl font-bold text-slate-900"
                   >
-                     فرم
+                    فرم
                   </h2>
                   <p class="text-xs sm:text-sm text-slate-500">
-                   فرم مرتبط داخل درستور <code>(page)</code>  
+                    فرم مرتبط داخل درستور <code>(page)</code>
                   </p>
                 </div>
               </div>
@@ -5967,9 +6025,9 @@
                     </a>
                   </div>
                 </div>
-<pre
-  class="overflow-x-auto bg-slate-100 p-5 text-sm leading-7 text-slate-700"
->
+                <pre
+                  class="overflow-x-auto bg-slate-100 p-5 text-sm leading-7 text-slate-700"
+                >
 <code>(page table="true" attach="true")</code>
   <code>(form id="(formid)")</code>
     &lt;div&gt;
@@ -8465,7 +8523,6 @@
                   </span>
                 </div>
               </div>
-             
             </div>
             <div class="space-y-5 pt-5 border-t">
               <div class="flex items-center gap-3">
@@ -8568,11 +8625,9 @@
                       <tr>
                         <td>تاریخ خام</td>
                         <td><code>(date)</code></td>
-                         <td>داده اضافه</td>
+                        <td>داده اضافه</td>
                         <td><code>(tag)</code></td>
-
                       </tr>
-                      
                     </tbody>
                   </table>
                 </div>
