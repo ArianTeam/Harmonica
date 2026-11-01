@@ -101,6 +101,9 @@
                     <a href="#banner">بنر سایت</a>
                   </li>
                   <li>
+                    <a href="#slider">اسلایدر</a>
+                  </li>
+                  <li>
                     <a href="#datagroup">datagroup</a>
                   </li>
                   <li>
@@ -2164,7 +2167,11 @@
         <!-- end-pagination -->
 
         <!-- start-banner-->
-        <section id="banner" data-search="بنر،بنرسایت" class="card space-y-5">
+        <section
+          id="banner"
+          data-search="،banner، بنر،بنرسایت"
+          class="card space-y-5"
+        >
           <div
             class="flex flex-wrap page-header gap-3 items-center justify-between bg-slate-100 px-2 py-3 sm:px-5 sm:py-3"
           >
@@ -2290,6 +2297,296 @@
     &lt;img src="(src)" alt="Banner"&gt;
   &lt;/a&gt;
  <code>(/banner)</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end-banner-->
+
+        <!-- start-slider-->
+        <section
+          id="slider"
+          data-search="slider،اسلایدر"
+          class="card space-y-5"
+        >
+          <div
+            class="flex flex-wrap page-header gap-3 items-center justify-between bg-slate-100 px-2 py-3 sm:px-5 sm:py-3"
+          >
+            <div class="flex items-center gap-2">
+              <span class="size-3 rounded-full bg-red-400"></span>
+              <span class="size-3 rounded-full bg-yellow-400"></span>
+              <span class="size-3 rounded-full bg-green-400"></span>
+
+              <span class="h-5 w-px bg-slate-300"></span>
+
+              <span class="badge badge_information">دستور</span>
+            </div>
+
+            <h2
+              class="text-sm sm:text-lg font-semibold text-slate-900"
+              dir="auto"
+            >
+              (slider)(/slider)
+            </h2>
+          </div>
+
+          <div class="sm:px-3 space-y-5">
+            <!-- دستور -->
+            <div>
+              <pre>(slider name="#") ... (/slider)</pre>
+            </div>
+
+
+
+            <p>
+              <strong>یک لینک روی کل تصویر:</strong> مورد استفاده برای مواردی که یک لینک  و یک تصویر توی هر اسلاید داریم
+            
+            </p>
+
+            <!-- فیلدها -->
+            <div class="space-y-5 pt-5 border-t">
+              <div class="flex items-center gap-3">
+                <div
+                  class="flex size-10 shrink-0 items-center justify-center rounded-xl bg-sky-100 text-sky-700"
+                >
+                  <i class="harmony-icon-code harmony-icon"></i>
+                </div>
+
+                <div>
+                  <h2
+                    class="text-xs sm:text-sm md:text-xl font-bold text-slate-900"
+                  >
+                    فیلدها
+                  </h2>
+                  <p class="text-xs sm:text-sm text-slate-500">
+                    این فیلدها و دستورات داخلی در ساختار اسلایدر قابل استفاده
+                    هستند.
+                  </p>
+                </div>
+              </div>
+
+              <div class="help_box_table">
+                <div class="help_table_wrapper">
+                  <table class="help_table">
+                    <thead>
+                      <tr>
+                        <th>توضیح</th>
+                        <th>فیلد</th>
+                        <th>توضیح</th>
+                        <th>فیلد</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td>تصویر دسکتاپ</td>
+                        <td><code>(desktop)</code></td>
+
+                        <td>تصویر موبایل</td>
+                        <td><code>(mobile)</code></td>
+                      </tr>
+
+                      <tr>
+                        <td>لینک اسلاید</td>
+                        <td><code>(link)</code></td>
+
+                        <td>عنوان اسلاید</td>
+                        <td><code>(title)</code></td>
+                      </tr>
+
+                      <tr>
+                        <td>مقدار عنوان</td>
+                        <td><code>(title-value)</code></td>
+
+                        <td>کلاس عنوان</td>
+                        <td><code>(title-class)</code></td>
+                      </tr>
+
+                      <tr>
+                        <td>متن اسلاید</td>
+                        <td><code>(text-value)</code></td>
+
+                        <td>کلاس متن</td>
+                        <td><code>(text-class)</code></td>
+                      </tr>
+
+                      <tr>
+                        <td>لینک دکمه</td>
+                        <td><code>(button-link)</code></td>
+
+                        <td>عنوان دکمه</td>
+                        <td><code>(button-title)</code></td>
+                      </tr>
+
+                      <tr>
+                        <td>کلاس دکمه</td>
+                        <td><code>(button-class)</code></td>
+
+                        <td>نام اسلایدر</td>
+                        <td><code>name="home"</code></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <!-- دستورات داخلی -->
+            <div class="space-y-5 pt-5 border-t">
+              <div class="flex items-center gap-3">
+                <div
+                  class="flex size-10 shrink-0 items-center justify-center rounded-xl bg-sky-100 text-sky-700"
+                >
+                  <i class="harmony-icon-code harmony-icon"></i>
+                </div>
+
+                <div>
+                  <h2
+                    class="text-xs sm:text-sm md:text-xl font-bold text-slate-900"
+                  >
+                    دستورات داخلی
+                  </h2>
+                  <p class="text-xs sm:text-sm text-slate-500">
+                    دستورات زیر برای کنترل نحوه نمایش تصویر، عنوان، متن و
+                    دکمه‌ها استفاده می‌شوند.
+                  </p>
+                </div>
+              </div>
+
+              <div class="help_box_table">
+                <div class="help_table_wrapper">
+                  <table class="help_table">
+                    <thead>
+                      <tr>
+                        <th>توضیح</th>
+                        <th>دستور</th>
+                        <th>توضیح</th>
+                        <th>دستور</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td>شروع و پایان اسلایدر</td>
+                        <td><code>(slider) ... (/slider)</code></td>
+
+                        <td>حالت لینک تصویر</td>
+                        <td><code>(linkmode:image)</code></td>
+                      </tr>
+
+                      <tr>
+                        <td>حالت لینک دکمه‌ها</td>
+                        <td><code>(linkmode:buttons)</code></td>
+
+                        <td>عنوان اسلاید</td>
+                        <td><code>(title-item)</code></td>
+                      </tr>
+
+                      <tr>
+                        <td>متن اسلاید</td>
+                        <td><code>(text-item)</code></td>
+
+                        <td>دکمه‌های اسلاید</td>
+                        <td><code>(button)</code></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <!-- خروجی کد -->
+            <div class="space-y-5">
+              <div class="flex items-center gap-3">
+                <div
+                  class="flex size-10 shrink-0 items-center justify-center rounded-xl bg-sky-100 text-sky-700"
+                >
+                  <i class="harmony-icon-chrome harmony-icon"></i>
+                </div>
+
+                <div>
+                  <h2
+                    class="text-xs sm:text-sm md:text-xl font-bold text-slate-900"
+                  >
+                    خروجی کد
+                  </h2>
+                  <p class="text-sm text-slate-500">
+                    مدل خروجی و نمایش اسلایدر در ساختار HTML
+                  </p>
+                </div>
+              </div>
+
+              <div class="overflow-hidden rounded-xl border border-slate-200">
+                <div
+                  class="flex items-center justify-between border-b border-slate-200 bg-slate-200 px-4 py-3"
+                >
+                  <div class="flex items-center gap-2">
+                    <span class="size-3 rounded-full bg-red-400"></span>
+                    <span class="size-3 rounded-full bg-yellow-400"></span>
+                    <span class="size-3 rounded-full bg-green-400"></span>
+
+                    <span class="h-5 w-px bg-slate-300"></span>
+
+                    <span class="text-sm font-medium text-slate-600">
+                      HTML Output
+                    </span>
+                  </div>
+                </div>
+
+                <pre
+                  class="overflow-x-auto bg-slate-100 p-5 text-sm leading-7 text-slate-700"
+                ><code>(slider name="home")</code>
+  &lt;article class="swiper-slide home-slide"&gt;
+
+    (linkmode:image)
+    &lt;a class="home-slide__image-link" href="(link)"&gt;
+      &lt;picture&gt;
+        &lt;source media="(max-width: 767px)" srcset="(mobile)"&gt;
+        &lt;img src="(desktop)" alt="(title)"&gt;
+      &lt;/picture&gt;
+    &lt;/a&gt;
+    (/linkmode)
+
+    (linkmode:buttons)
+    &lt;picture&gt;
+      &lt;source media="(max-width: 767px)" srcset="(mobile)"&gt;
+      &lt;img src="(desktop)" alt="(title)"&gt;
+    &lt;/picture&gt;
+    (/linkmode)
+
+    &lt;div class="home-slide__content"&gt;
+
+      (title-item)
+      &lt;h2 class="home-slide__title (title-class)"&gt;
+        (title-value)
+      &lt;/h2&gt;
+      (/title-item)
+
+      (text-item)
+      &lt;p class="home-slide__text (text-class)"&gt;
+        (text-value)
+      &lt;/p&gt;
+      (/text-item)
+
+      (linkmode:buttons)
+      &lt;div class="home-slide__actions"&gt;
+
+        (button)
+        &lt;a
+          class="home-slide__button (button-class)"
+          href="(button-link)"
+        &gt;
+          (button-title)
+        &lt;/a&gt;
+        (/button)
+
+      &lt;/div&gt;
+      (/linkmode)
+
+    &lt;/div&gt;
+
+  &lt;/article&gt;
+(/slider)</pre>
               </div>
             </div>
           </div>
