@@ -81,6 +81,9 @@
                   <li>
                     <a href="#faq">سوالات متداول</a>
                   </li>
+                  <li>
+                    <a href="#breadcrumb">مسیر پیمایش</a>
+                  </li>
 
                   <li>
                     <a href="#links">پیوندها</a>
@@ -1584,6 +1587,203 @@
           </div>
         </section>
         <!-- end-faq -->
+
+        <!-- start-breadcrumb -->
+        <section
+          id="breadcrumb"
+          data-search="مسیر راهنما،بردکرامب،breadcrumb"
+          class="card space-y-5"
+        >
+          <div
+            class="flex page-header flex-wrap gap-3 items-center justify-between bg-slate-100 px-2 py-3 sm:px-5 sm:py-3"
+          >
+            <div class="flex items-center gap-2">
+              <span class="size-3 rounded-full bg-red-400"></span>
+              <span class="size-3 rounded-full bg-yellow-400"></span>
+              <span class="size-3 rounded-full bg-green-400"></span>
+              <span class="h-5 w-px bg-slate-300"></span>
+              <span class="badge badge_information">دستور</span>
+            </div>
+
+            <h2
+              class="text-sm sm:text-lg font-semibold text-slate-900"
+              dir="auto"
+            >
+              (breadcrumb)(/breadcrumb)
+            </h2>
+          </div>
+
+          <div class="sm:px-3 space-y-5">
+            <div>
+              <pre>(breadcrumb ulclass="")...(/breadcrumb)</pre>
+            </div>
+
+            <div
+              class="rounded-xl border border-slate-200 bg-slate-50 p-4 space-y-2"
+            >
+              <div class="flex gap-3 items-center" dir="auto">
+                <span class="font-black shrink-0">ulclass:</span>
+                <div class="flex flex-wrap gap-2" dir="auto">
+                  <span class="text-xs badge rounded-lg bg-sky-100 inline-flex">
+                    ulclass="<span class="text-sky-700">افزودن کلاس </span>"
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="space-y-5 pt-5 border-t">
+              <div class="flex items-center gap-3">
+                <div
+                  class="flex size-10 shrink-0 items-center justify-center rounded-xl bg-sky-100 text-sky-700"
+                >
+                  <i class="harmony-icon-code harmony-icon"></i>
+                </div>
+
+                <div>
+                  <h2
+                    class="text-xs sm:text-sm md:text-xl font-bold text-slate-900"
+                  >
+                    فیلد ها
+                  </h2>
+                  <p class="text-xs sm:text-sm text-slate-500">
+                    این فیلد ها در داخل دستورات قابل استفاده هستند.
+                  </p>
+                </div>
+              </div>
+
+              <div class="help_box_table">
+                <div class="help_table_wrapper">
+                  <table class="help_table">
+                    <thead>
+                      <tr>
+                        <th>توضیح</th>
+                        <th>فیلد</th>
+                        <th>توضیح</th>
+                        <th>فیلد</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td>لینک</td>
+                        <td><code>(link)</code></td>
+                        <td>عنوان</td>
+                        <td><code>(title)</code></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="space-y-4 pt-5 border-t">
+              <div class="flex items-center gap-3">
+                <div
+                  class="flex size-10 shrink-0 items-center justify-center rounded-xl bg-sky-100 text-sky-700"
+                >
+                  <i class="harmony-icon-code harmony-icon"></i>
+                </div>
+
+                <div>
+                  <h2
+                    class="text-xs sm:text-sm md:text-xl font-bold text-slate-900"
+                  >
+                    جداکننده مسیر راهنما
+                  </h2>
+                  <p class="text-xs sm:text-sm text-slate-500">
+                    برای ایجاد فاصله و علامت جداکننده بین آیتم‌های مسیر راهنما
+                    می‌توانید از CSS زیر استفاده کنید.
+                  </p>
+                </div>
+              </div>
+
+              <div class="overflow-hidden rounded-xl border border-slate-200">
+                <div
+                  class="flex items-center gap-2 border-b border-slate-200 bg-slate-200 px-4 py-3"
+                >
+                  <span class="size-3 rounded-full bg-red-400"></span>
+                  <span class="size-3 rounded-full bg-yellow-400"></span>
+                  <span class="size-3 rounded-full bg-green-400"></span>
+                  <span class="h-5 w-px bg-slate-300"></span>
+                  <span class="text-sm font-medium text-slate-600">CSS</span>
+                </div>
+                <pre
+                  class="overflow-x-auto bg-slate-100 p-5 text-sm leading-7 text-slate-700"
+                ><code>&lt;style&gt;
+.breadcrumb_ul li.breadcrumb_li {
+    position: relative;
+  }
+.breadcrumb_ul li.breadcrumb_li:not(:last-child)::after {
+    content: '\276F';
+    display: inline-block;
+    margin-inline: 0.5rem;
+    vertical-align: middle;
+    color: inherit;
+    font-size: inherit;
+    transform: rotate(180deg);
+  }
+&lt;/style&gt;</code></pre>
+              </div>
+              <div
+                class="card_alert"
+              >
+                <strong>نکته:</strong>
+                این کد به‌صورت خودکار بین آیتم‌های مسیر راهنما علامت جداکننده
+                قرار می‌دهد و آخرین آیتم بدون جداکننده نمایش داده می‌شود. برای
+                عملکرد صحیح، کلاس‌های <code>breadcrumb_ul</code> و
+                <code>breadcrumb_li</code> باید مطابق دستور استفاده شوند.
+              </div>
+            </div>
+
+            <div class="space-y-5">
+              <div class="flex items-center gap-3">
+                <div
+                  class="flex size-10 shrink-0 items-center justify-center rounded-xl bg-sky-100 text-sky-700"
+                >
+                  <i class="harmony-icon-chrome harmony-icon"></i>
+                </div>
+
+                <div>
+                  <h2
+                    class="text-xs sm:text-sm md:text-xl font-bold text-slate-900"
+                  >
+                    خروجی کد
+                  </h2>
+                  <p class="text-xs sm:text-sm text-slate-500">
+                    مدل خروجی و نمایش در ساختار HTML
+                  </p>
+                </div>
+              </div>
+
+              <div class="overflow-hidden rounded-xl border border-slate-200">
+                <div
+                  class="flex items-center justify-between border-b border-slate-200 bg-slate-200 px-4 py-3"
+                >
+                  <div class="flex items-center gap-2">
+                    <span class="size-3 rounded-full bg-red-400"></span>
+                    <span class="size-3 rounded-full bg-yellow-400"></span>
+                    <span class="size-3 rounded-full bg-green-400"></span>
+                    <span class="h-5 w-px bg-slate-300"></span>
+                    <span class="text-sm font-medium text-slate-600">
+                      HTML Output
+                    </span>
+                  </div>
+                </div>
+
+                <pre
+                  class="overflow-x-auto bg-slate-100 p-5 text-sm leading-7 text-slate-700"
+                ><code>(breadcrumb ulclass="breadcrumb_ul")</code>
+  &lt;li&gt;
+    &lt;a href="(link)"&gt;
+      (title)
+    &lt;/a&gt;
+  &lt;/li&gt;
+<code>(/breadcrumb)</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end-breadcrumb -->
 
         <!-- start-links -->
         <section id="links" data-search="لینکز،پیوندها" class="card space-y-5">
